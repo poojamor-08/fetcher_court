@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Court Case Fetcher</title>
+</head>
+<body>
+    <h2>Search Case by CNR Number</h2>
+    <form method="POST">
+        <label for="cnr">CNR Number (16-digit):</label><br>
+        <input type="text" id="cnr" name="cnr" required><br><br>
+        <button type="submit">Fetch Case</button>
+    </form>
+
+    {% if result %}
+        <h3>Result:</h3>
+        <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>
